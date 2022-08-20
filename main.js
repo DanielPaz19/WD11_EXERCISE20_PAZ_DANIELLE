@@ -45,35 +45,47 @@ btnChoice.forEach((btn) => {
 
     // Check winner
 
-    if (player1 == "rock" && player2 == "paper") {
-      outputResult.innerHTML = "<span class='text-danger'>YOU LOSE! 😂</span>";
-    } else if (player1 == "rock" && player2 == "scissors") {
-      outputResult.innerHTML =
-        "<span class='text-success'>YOU WIN! 🎉🎊</span>";
-    } else {
-      console.log("Draw");
-    }
-    if (player1 == "paper" && player2 == "scissors") {
-      //Player 2 wins
-      outputResult.innerHTML = "<span class='text-danger'>YOU LOSE! 😂</span>";
-    } else if (player1 == "paper" && player2 == "rock") {
-      //Player 1 wins
-      outputResult.innerHTML =
-        "<span class='text-success'>YOU WIN! 🎉🎊</span>";
-    } else {
-      //Draw
-      outputResult.innerHTML = "<span class='text-warning'>DRAW! 😒👍</span>";
+    if (player1 == "rock") {
+      if (player2 == "paper") {
+        outputResult.innerHTML =
+          "<span class='text-danger'>YOU LOSE! 😂</span>";
+      } else if (player2 == "scissors") {
+        outputResult.innerHTML =
+          "<span class='text-success'>YOU WIN! 🎉🎊</span>";
+      } else {
+        outputResult.innerHTML = "<span class='text-warning'>DRAW! 😒👍</span>";
+      }
     }
 
-    if (player1 == "scissors" && player2 == "rock") {
-      //Player 2 wins
-      outputResult.innerHTML = "<span class='text-danger'>YOU LOSE! 😂</span>";
-    } else if (player1 == "scissors" && player2 == "paper") {
-      //Player 1 wins
-      outputResult.innerHTML =
-        "<span class='text-success'>YOU WIN! 🎉🎊</span>";
-    } else {
-      //Draw
+    if (player1 == "paper") {
+      if (player2 == "scissors") {
+        //Player 2 wins
+        outputResult.innerHTML =
+          "<span class='text-danger'>YOU LOSE! 😂</span>";
+      } else if (player2 == "rock") {
+        //Player 1 wins
+        outputResult.innerHTML =
+          "<span class='text-success'>YOU WIN! 🎉🎊</span>";
+      } else {
+        //Draw
+        outputResult.innerHTML = "<span class='text-warning'>DRAW! 😒👍</span>";
+      }
     }
+
+    if (player1 == "scissors") {
+      if (player2 == "rock") {
+        //Player 2 wins
+        outputResult.innerHTML =
+          "<span class='text-danger'>YOU LOSE! 😂</span>";
+      } else if (player2 == "paper") {
+        //Player 1 wins
+        outputResult.innerHTML =
+          "<span class='text-success'>YOU WIN! 🎉🎊</span>";
+      } else {
+        //Draw
+        outputResult.innerHTML = "<span class='text-warning'>DRAW! 😒👍</span>";
+      }
+    }
+    console.log(player1, player2);
   });
 });
