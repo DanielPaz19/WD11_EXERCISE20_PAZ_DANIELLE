@@ -85,18 +85,18 @@ const showHistory = () => {
 
 const winner = (player = null) => {
   if (!player) {
-    outputResult.innerHTML = "<span class='text-warning'>DRAW! 😒👍</span>";
+    outputResult.innerHTML = "<span class='text-warning'>DRAW!</span>";
     return 0;
   }
 
   if (player == 1) {
-    outputResult.innerHTML = "<span class='text-success'>YOU WIN! 🎉🎊</span>";
+    outputResult.innerHTML = "<span class='text-success'>YOU WIN!</span>";
 
     game.score.player1++;
   }
 
   if (player == 2) {
-    outputResult.innerHTML = "<span class='text-danger'>YOU LOSE! 😂</span>";
+    outputResult.innerHTML = "<span class='text-danger'>YOU LOSE!</span>";
 
     game.score.player2++;
   }
