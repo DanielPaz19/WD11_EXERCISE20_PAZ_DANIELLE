@@ -1,5 +1,14 @@
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
 
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: lightgray;
+}
+
 .output {
   font-size: 8rem;
+}
+
+.history-container {
+  height: 100vh !important;
 }

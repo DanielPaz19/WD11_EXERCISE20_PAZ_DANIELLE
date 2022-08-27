@@ -10922,6 +10922,15 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: lightgray;
+}
+
 .output {
   font-size: 8rem;
+}
+
+.history-container {
+  height: 100vh !important;
 }/*# sourceMappingURL=style.css.map */

@@ -4,41 +4,84 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exercise 20</title>
+    <title>Exercise 23</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="container text-center">
-      <h1 class="fw-bolder text-primary">
-        Rock-Paper-Scissors <br />
-        Game
-      </h1>
+    <div class="container-fluid text-center">
+      <div class="row">
+        <div class="col-3 bg-dark" style="overflow-y: scroll">
+          <div class="container-fluid history-container">
+            <h4 class="mt-3 text-secondary">Match History</h4>
 
-      <div class="container mt-5">
-        <div class="row">
-          <div class="col-6 text-center">
-            <h5>Player</h5>
-            <div class="output-player1 output">👊</div>
-          </div>
-          <div class="col-6 text-center">
-            <h5>Computer</h5>
-            <div class="output-player2 output">✌️</div>
+            <table class="table text-white mt-3 history-table">
+              <thead>
+                <tr>
+                  <th class="fw-normal">Round</th>
+                  <th class="fw-normal">P1</th>
+                  <th class="fw-normal">P2</th>
+                  <th class="fw-normal">Winner</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
           </div>
         </div>
-      </div>
+        <div class="col-9" style="height: 100vh">
+          <h1 class="fw-bolder text-primary">
+            Rock-Paper-Scissors <br />
+            Game
+          </h1>
 
-      <div class="container">
-        <h2 class="output-result fs-2">
-          <span class="text-primary"> Choose one to Start ... </span>
-        </h2>
-      </div>
+          <div
+            class="game-container position-relative"
+            style="min-height: 50vh"
+          >
+            <div class="container mt-5">
+              <div class="row">
+                <div class="col-4 text-center">
+                  <h1 id="scorePlayer1" class="text-white">0</h1>
+                  <h5>Player</h5>
+                  <div class="output-player1 output">👊</div>
+                </div>
+                <div class="col-4">
+                  <h3 class="text-info">
+                    ROUND <span class="round-counter">1</span>
+                  </h3>
+                </div>
+                <div class="col-4 text-center">
+                  <h1 id="scorePlayer2" class="text-white">0</h1>
+                  <h5>Computer</h5>
+                  <div class="output-player2 output">✌️</div>
+                </div>
+              </div>
+            </div>
 
-      <div class="container mt-5">
-        <button class="btn btn-primary btn__rock btn__choice">Rock</button>
-        <button class="btn btn-primary btn__paper btn__choice">Paper</button>
-        <button class="btn btn-primary btn__scissors btn__choice">
-          Scissors
-        </button>
+            <div class="container">
+              <h2 class="output-result fs-2">
+                <span class="text-primary"> Choose one to Start ... </span>
+              </h2>
+            </div>
+
+            <div class="container mt-5">
+              <button class="btn btn-outline-primary btn__rock btn__choice">
+                Rock
+              </button>
+              <button class="btn btn-outline-primary btn__paper btn__choice">
+                Paper
+              </button>
+              <button class="btn btn-outline-primary btn__scissors btn__choice">
+                Scissors
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
